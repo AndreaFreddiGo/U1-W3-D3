@@ -7,11 +7,29 @@
     <link rel="stylesheet" href="./assets/css/reset.css" />
     <!-- css style -->
     <link rel="stylesheet" href="./assets/css/tasklist.css" />
-    <title>MY TASK-LIST</title>
+    <title>MY TASK LIST</title>
   </head>
   <body>
-    <header></header>
-    <main></main>
+    <header class="main-style">
+      <h1>TASK LIST</h1>
+    </header>
+    <main>
+      <form id="main-form">
+        <div>
+          <label for="task">NEW TASK</label>
+        </div>
+        <div>
+          <input
+            id="task"
+            type="text"
+            placeholder="Insert here your new task"
+            required
+          />
+        </div>
+        <div><button>CLICK TO ADD TASK</button></div>
+      </form>
+      <ul class="main-style"></ul>
+    </main>
     <footer></footer>
     <script src="./script/tasklist.js"></script>
   </body>
