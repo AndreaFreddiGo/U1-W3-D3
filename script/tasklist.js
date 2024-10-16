@@ -9,6 +9,16 @@ form.addEventListener('submit', function (e) {
 
   const newButton = document.createElement('button')
   newButton.innerText = 'CLICK TO REMOVE'
+  newButton.addEventListener('click', function (e) {
+    newAddedTask.remove()
+  })
+  newAddedTask.addEventListener('click', function (e) {
+    if ((newAddedTask.style.textDecoration = 'none')) {
+      newAddedTask.style.textDecoration = 'line-through'
+    } else {
+      newAddedTask.style.textDecoration = 'none'
+    }
+  })
   newAddedTask.appendChild(newButton)
   const ul = document.getElementsByTagName('ul')[0]
   ul.appendChild(newAddedTask)
